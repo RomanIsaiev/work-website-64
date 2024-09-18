@@ -33,3 +33,27 @@
   src: url(../fonts/FUTURAPT-BOLD.TTF);
   font-weight: 700;
 }
+
+@font-face {
+  font-family: 'Bebas Neue Cyrillic';
+  src: url(../fonts/Bebas_Neue_Cyrillic.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Benzin-Regular';
+  src: url(../fonts/Benzin-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Benzin-Semibold';
+  src: url(../fonts/Benzin-Semibold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Benzin-Medium';
+  src: url(../fonts/Benzin-Medium.ttf);
+  font-weight: 400;
+}
