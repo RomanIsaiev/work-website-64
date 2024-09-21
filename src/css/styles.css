@@ -432,21 +432,9 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .personal-trajectory {
+    background-image: url(../img/personal-trajectory/author-background.png),
+      url(../img/personal-trajectory/money-mobile-2x.png);
   }
-}
-
-@media screen and (min-width: 768px) {
-  /* .personal-trajectory {
-    padding-top: 75px;
-    padding-bottom: 100px;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .personal-trajectory {
-    }
-  } */
 }
 
 .personal-trajectory .container {
@@ -544,6 +532,10 @@
   margin-right: auto;
 }
 
+.personal-money-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
   .personal-author-image {
     display: none;
@@ -555,6 +547,25 @@
     position: static;
 
     height: 204px;
+  }
+
+  .personal-trajectory {
+    padding-top: 200px;
+    padding-bottom: 120px;
+
+    background-image: url(../img/personal-trajectory/money-mobile-1x.png),
+      url(../img/personal-trajectory/desktop-ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 60%, right 20% top;
+    background-size: 180px, 600px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .personal-trajectory {
+      background-image: url(../img/personal-trajectory/money-mobile-2x.png);
+    }
   }
 
   .personal-wrapper {
@@ -575,6 +586,14 @@
     background: rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 14.636px 0px rgba(255, 221, 85, 0.5);
     backdrop-filter: blur(7.318007946014404px);
+  }
+
+  .personal-money-desktop {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: block;
   }
 
   .personal-title {
@@ -647,10 +666,11 @@
 .usually-title span {
   background: linear-gradient(
     92deg,
-    #dfb039 8.51%,
-    #ffda78 54.63%,
-    #dfb039 97.36%
+    #ec8e00 8.51%,
+    #ffc640 54.63%,
+    #ec8e00 97.36%
   );
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -730,7 +750,12 @@
 @media screen and (min-width: 1280px) {
   .how-usually {
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+
+    background-image: url(../img/usually/ellipse-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top -50px;
+    background-size: 500px;
   }
 
   .usually-title {
@@ -1041,11 +1066,11 @@
 
 @media screen and (min-width: 1280px) {
   .dream {
-    padding: 0;
+    padding: 150px 0;
     background-image: url(../img/dream/desktop-ellipse.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: contain;
+    background-size: 500px;
   }
 
   .dream .container {
@@ -1241,6 +1266,16 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .for-whom {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    background-image: url(../img/for-whom/desktop-ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   .for-whom-title {
     font-size: 41px;
     max-width: 620px;
@@ -2114,6 +2149,16 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .how-mentoring {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-image: url(../img/mentoring/desktop-ellipse-blue.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    background-size: contain;
+  }
+
   .mentoring-title {
     font-size: 42px;
     max-width: 615px;
@@ -2257,6 +2302,16 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .you-get {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    background-image: url(../img/you-get/desktop-ellipse-orange.svg);
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    background-size: contain;
+  }
+
   .you-get-title {
     font-size: 40px;
     max-width: 545px;
@@ -2362,7 +2417,7 @@
 }
 
 .master-format-list .item-title-box {
-  padding: 40px 40px 20px 40px;
+  padding: 40px 20px 20px 20px;
   border-radius: 10px;
   background: #fff;
 
@@ -2447,7 +2502,7 @@
   color: #171717;
   text-align: center;
   font-family: 'Futura PT';
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 15px */
@@ -2537,7 +2592,7 @@
   text-decoration: line-through;
 
   font-family: 'Futura PT';
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -2596,6 +2651,13 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .master-format-title {
+    font-size: 32px;
+    max-width: 465px;
+  }
+}
+
 /* master-list */
 
 .master-list {
@@ -2614,7 +2676,7 @@
   color: #949494;
   text-decoration: line-through;
   font-family: 'Futura PT';
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 15px */
@@ -2666,7 +2728,7 @@
 .do-for-you-title {
   color: #fff;
   font-family: 'Futura PT';
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 15px */
@@ -2695,7 +2757,7 @@
 .do-for-you .list-item {
   color: #949494;
   font-family: 'Futura PT';
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 15px */
@@ -2730,6 +2792,18 @@
   font-weight: 400;
   line-height: 120%; /* 24px */
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1280px) {
+  .conditions-container {
+    padding: 30px;
+
+    margin-bottom: 60px;
+  }
+
+  .conditions-text {
+    font-size: 32px;
+  }
 }
 
 /* old-price-container */
@@ -3061,6 +3135,16 @@
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1280px) {
+  .results-text {
+    font-size: 16px;
+
+    letter-spacing: -0.34px;
+
+    max-width: 210px;
+  }
+}
+
 /* reviews */
 
 .reviews-title {
@@ -3249,6 +3333,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .questions {
+    background-image: url(../img/questions/desktop-ellipse-blue.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+  }
+
   .questions-title {
     font-size: 56px;
     letter-spacing: 0;
@@ -3370,7 +3461,7 @@
 /* footer */
 
 .footer {
-  background: #101010;
+  background: #0d0d0d;
 }
 
 .footer-deals::after {
