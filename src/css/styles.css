@@ -440,7 +440,7 @@
 .personal-trajectory .container {
   position: relative;
 
-  height: 385px;
+  /* height: 385px; */
 }
 
 .personal-author-image {
@@ -544,14 +544,30 @@
   }
 
   .personal-trajectory {
-    padding-top: 200px;
-    padding-bottom: 120px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding: 0;
 
-    background-image: url(../img/personal-trajectory/money-mobile-1x.png),
+    /* background-image: url(../img/personal-trajectory/money-mobile-1x.png),
       url(../img/personal-trajectory/desktop-ellipse.svg);
     background-repeat: no-repeat;
     background-position: left 0 top 60%, right 20% top;
-    background-size: 180px, 600px;
+    background-size: 180px, contain; */
+
+    background-image: url(../img/personal-trajectory/money-mobile-1x.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 60%;
+    background-size: 180px;
+  }
+
+  .personal-trajectory .container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    background-image: url(../img/personal-trajectory/desktop-ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: right 50px top -40px;
+    background-size: 500px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -564,13 +580,6 @@
 
   .personal-trajectory .container {
     position: static;
-
-    background-image: url(../img/personal-trajectory/desktop-ellipse.svg);
-    background-repeat: no-repeat;
-    background-position: right 10vw top;
-    background-size: 600px;
-
-    height: 204px;
   }
 
   .personal-wrapper {
@@ -582,6 +591,7 @@
 
     max-width: 764px;
     width: 100%;
+    height: 312px;
 
     margin: 0 auto;
 
@@ -635,6 +645,15 @@
     position: absolute;
     top: 7px;
     right: 21px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .howwe-background {
+    background-image: url(../img/usually/ellipse-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 500px;
   }
 }
 
@@ -754,13 +773,10 @@
 
 @media screen and (min-width: 1280px) {
   .how-usually {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 
-    background-image: url(../img/usually/ellipse-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: left top -50px;
-    background-size: 500px;
+    background-image: none;
   }
 
   .usually-title {
@@ -1071,26 +1087,29 @@
 
 @media screen and (min-width: 1280px) {
   .dream {
-    padding: 150px 0;
-    background-image: url(../img/dream/desktop-ellipse.svg);
+    padding: 50px 0;
+    /* background-image: url(../img/dream/desktop-ellipse.svg),
+      url(../img/dream/desktop-coins-1x.png);
     background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 500px;
+    background-position: right bottom, right 70px bottom 30px;
+    background-size: contain, contain; */
+    background-image: none;
   }
 
   .dream .container {
-    padding: 100px 0;
-    background-image: url(../img/dream/desktop-coins-1x.png);
+    background-image: url(../img/dream/desktop-ellipse.svg),
+      url(../img/dream/desktop-coins-1x.png);
     background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 530px;
+    background-position: right bottom, right 70px bottom 30px;
+    background-size: contain, contain;
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .dream .container {
-      background-image: url(../img/dream/desktop-coins-2x.png);
+      background-image: url(../img/dream/desktop-ellipse.svg),
+        url(../img/dream/desktop-coins-2x.png);
     }
   }
 
@@ -1272,13 +1291,13 @@
 
 @media screen and (min-width: 1280px) {
   .for-whom {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 
     background-image: url(../img/for-whom/desktop-ellipse.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 2100px;
   }
 
   .for-whom-title {
@@ -1753,6 +1772,29 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .your-steps {
+    background-image: url(../img/your-steps/mobile-ellipse-blue.svg),
+      url(../img/your-steps/mobile-ellipse-orange.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    background-size: contain, contain;
+  }
+
+  .your-steps.section {
+    padding: 0;
+  }
+
+  .your-steps .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-image: url(../img/your-steps/bg-ellipse-desktop.svg),
+      url(../img/your-steps/bg-fire-mobile-1x.png);
+    background-repeat: no-repeat;
+    background-position: right top -30px, right 70px top 30px;
+    background-size: 300px, 150px;
+  }
+
   .your-steps-title {
     font-size: 40px;
     letter-spacing: -0.8px;
@@ -2154,6 +2196,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .mentor-get-bg {
+    background-image: url(../img/you-get/desktop-ellipse-orange.svg);
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    background-size: contain;
+  }
+
   .how-mentoring {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -2308,13 +2357,10 @@
 
 @media screen and (min-width: 1280px) {
   .you-get {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 
-    background-image: url(../img/you-get/desktop-ellipse-orange.svg);
-    background-repeat: no-repeat;
-    background-position: right 0 top 0;
-    background-size: contain;
+    background-image: none;
   }
 
   .you-get-title {
@@ -2657,6 +2703,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .master-format {
+    background-image: url(../img/master-format/bg-ellipse-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
+
   .master-format-title {
     font-size: 32px;
     max-width: 465px;
@@ -3146,6 +3199,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .bonuses-section {
+    background-image: url(../img/bonuses/bg-ellipse-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+  }
+
   .results-text {
     font-size: 16px;
 

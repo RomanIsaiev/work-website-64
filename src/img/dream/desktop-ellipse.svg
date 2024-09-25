@@ -1,9 +1,9 @@
-<svg width="616" height="964" viewBox="0 0 616 964" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="963" height="963" viewBox="0 0 963 963" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_100_968)">
-<circle cx="481.5" cy="482.057" r="181.5" fill="#FF9900"/>
+<circle cx="481.5" cy="481.5" r="181.5" fill="#FF9900"/>
 </g>
 <defs>
-<filter id="filter0_f_100_968" x="-0.000183105" y="0.556641" width="963" height="963" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f_100_968" x="0" y="0" width="963" height="963" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_100_968"/>
