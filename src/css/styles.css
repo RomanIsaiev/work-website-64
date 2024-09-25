@@ -566,7 +566,7 @@
 
     background-image: url(../img/personal-trajectory/desktop-ellipse.svg);
     background-repeat: no-repeat;
-    background-position: right 50px top -40px;
+    background-position: right 80px top -10px;
     background-size: 500px;
   }
 
@@ -643,7 +643,7 @@
     display: block;
 
     position: absolute;
-    top: 7px;
+    top: 21px;
     right: 21px;
   }
 }
@@ -984,7 +984,7 @@
   background-image: url(../img/dream/mobile-ellipse.svg),
     url(../img/dream/mobile-money-1x.png);
   background-repeat: no-repeat;
-  background-position: right bottom, right bottom -10px;
+  background-position: right bottom, right bottom 80px;
   background-size: 250px, 230px;
 }
 
@@ -1010,8 +1010,6 @@
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 7px 0px rgba(63, 126, 234, 0.5);
   backdrop-filter: blur(4px);
-
-  height: 150px;
 
   margin-bottom: 12px;
 }
@@ -1087,7 +1085,8 @@
 
 @media screen and (min-width: 1280px) {
   .dream {
-    padding: 50px 0;
+    /* padding: 50px 0; */
+    padding: 0;
     /* background-image: url(../img/dream/desktop-ellipse.svg),
       url(../img/dream/desktop-coins-1x.png);
     background-repeat: no-repeat;
@@ -1097,11 +1096,12 @@
   }
 
   .dream .container {
+    padding: 50px 0;
     background-image: url(../img/dream/desktop-ellipse.svg),
       url(../img/dream/desktop-coins-1x.png);
     background-repeat: no-repeat;
-    background-position: right bottom, right 70px bottom 30px;
-    background-size: contain, contain;
+    background-position: right bottom, right 60px bottom 30px;
+    background-size: 400px, 360px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -1130,6 +1130,7 @@
     max-width: 380px;
     width: 100%;
     margin: 0;
+    height: 150px;
   }
 
   .dream-title {
@@ -1297,7 +1298,7 @@
     background-image: url(../img/for-whom/desktop-ellipse.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2100px;
+    background-size: 1800px;
   }
 
   .for-whom-title {
@@ -2155,7 +2156,7 @@
   color: #fff;
   text-align: center;
   font-family: 'Futura PT';
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -2321,7 +2322,7 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 38.4px */
+  line-height: 100%; /* 38.4px */
   text-transform: uppercase;
 
   background: linear-gradient(
@@ -2392,7 +2393,7 @@
 
   .you-get-list .item-number {
     font-size: 52px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
 
   .you-get-list .item-text {
